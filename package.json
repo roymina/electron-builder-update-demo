@@ -1,0 +1,39 @@
+{
+  "name": "electron-autoupdater",
+  "version": "0.1.2",
+  "private": false,
+  "description": "whatever desc",
+  "author": "angeladaddy",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "publish": "build --win -p always",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "vue": "^2.5.22",
+    "vue-router": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.4.0",
+    "@vue/cli-service": "^3.4.0",
+    "electron": "^3.0.0",
+    "electron-updater": "^4.0.6",
+    "vue-cli-plugin-electron-builder": "^1.0.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "main": "background.js"
+}
