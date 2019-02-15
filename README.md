@@ -1,29 +1,8 @@
-# electron-autoupdater
+# electron 示例项目
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- 在 Vue Cli3 中使用 Electron
+- 桌面通知
+- 无边框拖拽
+- 任务栏图标
+- 打包
+- 自动更新

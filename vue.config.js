@@ -1,10 +1,16 @@
 module.exports = {
+  configureWebpack: {
+    node: {
+      __filename: true,
+      __dirname: true
+    }
+  },
   pluginOptions: {
     electronBuilder: {
       builderOptions: {
         // options placed here will be merged with default configuration and passed to electron-builder
-        productName: "electron_test",
-        appId: "angeladaddy.prac.electron.autoupdate",
+        productName: "electron_demo",
+        appId: "gfwgodie",
         publish: [
           {
             provider: "generic",
